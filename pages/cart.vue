@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen flex justify-center bg-gradient-to-t from-gray-800 to-white-900">
       <div class="bg-transparent">
-        <h1 class="text-3xl font-extrabold mb-6 text-gray-800">Shopping Cart</h1>
+        <h1 class="text-3xl text-center font-extrabold mb-6 text-gray-800 mt-5">Shopping Cart</h1>
   
         <div v-if="cart.length === 0" class="text-gray-600">
           Your cart is empty.
@@ -30,4 +30,7 @@ function removeItem(index) {
   console.log(cart.index)
   cart.value=cart.value.filter((item,i)=>i!==index)
 }
+definePageMeta({
+    middleware:["auth"]
+})
 </script>

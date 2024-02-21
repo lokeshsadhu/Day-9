@@ -11,7 +11,9 @@
             <li><NuxtLink to="/garage" class="text-white hover:text-gray-300">Garage</NuxtLink></li>
             <li><NuxtLink to="/about" class="text-white hover:text-gray-300">About</NuxtLink></li>
             <li><NuxtLink to="/account" class="text-white hover:text-gray-300">Account</NuxtLink></li>
-            <li><NuxtLink to="/cart" class="text-green-500">Cart({{cart.length}})</NuxtLink></li>
+            <li><NuxtLink to="/register" class="text-yellow-500 hover:text-gray-300">Register</NuxtLink></li>
+            <li><NuxtLink to="/login" class="text-blue-300 hover:text-gray-300">Login</NuxtLink></li>
+            <li><NuxtLink to="/cart" class="text-orange-500 hover:text-gray-300">Cart({{cart.length}})</NuxtLink></li>
             </ul>
         </div>
         </div>

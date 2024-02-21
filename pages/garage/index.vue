@@ -2,7 +2,7 @@
    <div class="min-h-screen flex justify-center bg-gradient-to-t from-gray-800 to-#18181b-900">
     <div class="flex flex-col items-center">
     <div>
-        <h1 class="text-2xl font-bold p-4">My Garage</h1>
+        <h1 class="text-4xl font-bold p-4">My Garage</h1>
     </div>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -36,8 +36,7 @@
     useHead({
         title:"My Garage",
     });
+    definePageMeta({
+        middleware:["auth"]
+    })
 </script>
-
-<style>
-
-</style>

@@ -13,6 +13,12 @@
 </div>
 </template>
 
+<script setup>
+definePageMeta({
+    middleware:["auth"]
+})
+</script>
+
 <style>
 .car{
     height: 300px;
