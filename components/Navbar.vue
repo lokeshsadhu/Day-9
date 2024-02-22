@@ -8,7 +8,7 @@
         <div>
             <ul class="flex space-x-4">
             <li><NuxtLink to="/" class="text-white hover:text-gray-300">Home</NuxtLink></li>
-            <li><NuxtLink to="/garage" class="text-white hover:text-gray-300">Garage</NuxtLink></li>
+            <li><NuxtLink to="/products" class="text-white hover:text-gray-300">Products</NuxtLink></li>
             <li><NuxtLink to="/about" class="text-white hover:text-gray-300">About</NuxtLink></li>
             <li><NuxtLink to="/account" class="text-white hover:text-gray-300">Account</NuxtLink></li>
             <li><NuxtLink to="/register" class="text-yellow-500 hover:text-gray-300">Register</NuxtLink></li>

@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   $meta:{
     title:"Garage"
   },
+  modules: [
+    '@nuxt/content'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},

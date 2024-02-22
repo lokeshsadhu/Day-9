@@ -9,9 +9,9 @@
   
         <div v-else>
           <div v-for="(item, index) in cart" :key="index" class="flex items-center mb-8">
-            <img :src="`/images/${item.name}.jpg`" alt="Product" class="w-96 h-52 object-cover rounded-md mr-6 ">
+            <img :src="item.image" alt="Product" class="w-96 h-52 object-cover rounded-md mr-6 ">
             <div>
-              <h2 class="text-xl font-semibold mb-2">{{ item.name }}</h2>
+              <h2 class="text-xl font-semibold mb-2">{{ item.title }}</h2>
               <button @click="removeItem(index)" class="text-red-500 hover:text-red-700 focus:outline-none">
                 Remove
               </button>
@@ -33,4 +33,5 @@ function removeItem(index) {
 definePageMeta({
     middleware:["auth"]
 })
+console.log(cart.value)
 </script>
