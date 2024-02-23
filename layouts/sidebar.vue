@@ -1,5 +1,6 @@
 <template>
     <main>
+        <Navbar/>
         <slot></slot>
     </main>
     <!-- <article class="d-flex flex-column">

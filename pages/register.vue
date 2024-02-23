@@ -13,6 +13,7 @@
             </div>
             <button @click="reg(username, password)" type="submit" class="w-full bg-yellow-500 text-black p-2 rounded-md">Register</button>
         </form>
+        <p class="text-center text-green-900 mt-5" v-if="registered">User Registered</p>
         </div>
     </div>
 </template>
@@ -23,14 +24,16 @@ const users=usersList()
 const {$register}=useNuxtApp()
 const username=ref('')
 const password=ref('')
+const successMsg=ref('')
+const errorMsg=ref('')
 const registered=ref(false)
 function reg(){
     let a=$register(username.value,password.value)
-    console.log(users.value)
-    registered.value=true
-    if(registered.value===true){
-        navigateTo({path:'/login'})
+    if(a="User Registered"){
+        registered.value=true
+        setTimeout(() => {
+        navigateTo({ path: '/login' });
+        }, 1000);
     }
-    registered.value=false
 }
 </script>

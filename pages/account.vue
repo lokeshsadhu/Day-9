@@ -24,6 +24,9 @@
         <button @click="logout" class="bg-red-600 hover:bg-red-500 text-white font-bold py-2 px-4 rounded">
           Logout
         </button>
+        <button @click="changePassword" class="bg-yellow-600 hover:bg-red-500 text-white font-bold ml-5 py-2 px-4 rounded">
+          Change Password
+        </button>
       </div>
     </div>
   </div>
@@ -32,12 +35,15 @@
 <script setup>
 const backgroundImageUrl='/images/suit.jpg'
 definePageMeta({
-    layout:"sidebar",
+    // layout:"sidebar",
     middleware:["auth"]
 })
 const loginStatus=isLoggedIn()
 function logout(){
   loginStatus.value=false
   navigateTo('/login')
+}
+function changePassword(){
+  navigateTo('/changePass')
 }
 </script>
