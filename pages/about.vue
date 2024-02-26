@@ -64,7 +64,7 @@ definePageMeta({
 useHead({
     title:"About Page"
 })
-const backgroundImageUrl='/images/item.jpg'
+const backgroundImageUrl='/images/background.jpg'
 </script>
 
 <style>

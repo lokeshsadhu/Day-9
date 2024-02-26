@@ -16,7 +16,7 @@
             <button @click="log(username, password)" type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md">Login</button>
             <div class="text-center mt-4">
             <p>For Login you need to register First!</p>
-            <p @click="register" class="hover:text-blue-500 cursor-pointer">Want to register? Click here!</p>
+            <p @click="register" class="hover:text-yellow-700 cursor-pointer text-blue-700">Want to register? Click here!</p>
             </div>
             <p class="text-red-700 text-center" v-if="errorMsg">Incorrect Credentials</p>
             <p class="text-green-700 text-center" v-if="successMsg">User Logging in.....</p>

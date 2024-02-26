@@ -10,7 +10,8 @@
             <h1 class="text-4xl font-extrabold mb-4">{{ item.title }}</h1>
             <div class="mb-4">
               <p>{{ item.description }}</p>
-              <p>{{ item.rating.rate }} - ({{ item.rating.count }})</p>
+              <p class="font-extrabold">{{ item.rating.rate }} - ({{ item.rating.count }})</p>
+              <p class="font-extrabold text-4xl">$ {{ item.price }}</p>
             </div>
             <button @click="addToCart()" class="bg-green-700 text-black py-2 px-4 rounded-lg hover:bg-lightgreen-dark focus:outline-none focus:shadow-outline-lightgreen active:bg-lightgreen-darker">
               <span v-if="inCart()">Remove from Cart</span>
@@ -41,7 +42,7 @@ function inCart(){
 
 function addToCart(){
     if(!inCart()){
-        cart.value.push({id:id,title:item.title,image:item.image,price:item.price})
+        cart.value.push({id:id,title:item.title,image:item.image,price:item.price,quantity:1})
     }
     else{
         cart.value=cart.value.filter((item)=>item.id!==id)
